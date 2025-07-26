@@ -8,42 +8,42 @@ The system combines traditional statistical methods with AI-powered insights to 
 
 ## Key Features
 
-### 📊 **Dashboard & Analytics**
+###  **Dashboard & Analytics**
 - Real-time inventory overview with key metrics
 - Interactive charts showing stock distribution by category
 - Low stock alerts and threshold monitoring
 - Historical stock movement analysis
 
-### 🔐 **User Management**
+###  **User Management**
 - Role-based authentication (Admin, Manager, User)
 - Secure password hashing
 - Permission-based access control for sensitive operations
 
-### 📦 **Inventory Management**
+###  **Inventory Management**
 - Add, edit, and delete inventory items
 - Track stock levels, thresholds, and unit costs
 - Supplier information management
 - Category-based organization
 
-### 🔮 **AI-Powered Forecasting**
+###  **AI-Powered Forecasting**
 - Demand prediction using linear regression and AI models
 - Integration with Ollama for advanced AI insights
 - Confidence intervals and trend analysis
 - Risk assessment and reorder recommendations
 
-### 📈 **Advanced Analytics**
+###  **Advanced Analytics**
 - Stock movement trend analysis
 - Cost analysis by category and item
 - Movement type distribution (in/out/adjustment)
 - High-value item identification
 
-### 📋 **Data Management**
+###  **Data Management**
 - CSV import/export functionality
 - Historical data tracking
 - Automated sample data generation
 - Data validation and error handling
 
-### 🤖 **AI Insights**
+###  **AI Insights**
 - Stock optimization recommendations
 - Anomaly detection in stock movements
 - Automated reorder suggestions
