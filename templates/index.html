@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCP OptiStock - Inventory Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --light: #f0f9ff;
+            --dark: #0c1a32;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            height: 100vh;
+            max-width: 1600px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-menu {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 20px;
+            margin: 5px 0;
+            border-radius: 0;
+            transition: all 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .nav-link i {
+            margin-right: 10px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .chat-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        .chat-header {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            z-index: 100;
+        }
+
+        .chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #f9fafb;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message {
+            max-width: 80%;
+            margin-bottom: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .user-message {
+            align-self: flex-end;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 18px 18px 4px 18px;
+        }
+
+        .bot-message {
+            align-self: flex-start;
+            background-color: white;
+            color: var(--dark);
+            border: 1px solid #e9ecef;
+            border-radius: 18px 18px 18px 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .message-content {
+            padding: 12px 16px;
+        }
+
+        .message-timestamp {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 5px;
+            text-align: right;
+        }
+
+        .input-container {
+            padding: 15px;
+            background-color: white;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .message-input {
+            border-radius: 24px;
+            padding: 12px 20px;
+            border: 1px solid #e9ecef;
+            resize: none;
+        }
+
+        .message-input:focus {
+            box-shadow: none;
+            border-color: var(--secondary);
+        }
+
+        .send-btn {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+        }
+
+        .send-btn:hover {
+            background-color: #2563eb;
+        }
+
+        .send-btn:disabled {
+            background-color: #9ca3af;
+        }
+
+        .inventory-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background-color: var(--light);
+            padding: 12px 15px;
+            font-weight: 600;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .table-responsive {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .table th {
+            background-color: var(--light);
+        }
+
+        .badge-low {
+            background-color: var(--danger);
+        }
+
+        .badge-normal {
+            background-color: var(--success);
+        }
+
+        .badge-high {
+            background-color: var(--warning);
+        }
+
+        .suggestion-chip {
+            display: inline-block;
+            background-color: var(--light);
+            border: 1px solid #e9ecef;
+            border-radius: 20px;
+            padding: 6px 15px;
+            margin: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .suggestion-chip:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .suggestions-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+            }
+
+            .message {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="login-container">
+        <div class="login-logo">
+            <i class="fas fa-boxes fa-3x text-primary mb-3"></i>
+            <h2>OCP OptiStock</h2>
+            <p class="text-muted">Intelligent Inventory Management</p>
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Remember me</label>
+        </div>
+        <button id="login-btn" class="btn btn-primary login-btn">Login</button>
+        <div id="login-error" class="text-danger mt-3 text-center" style="display: none;">
+            Invalid username or password. Please try again.
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div id="app-container" class="app-container" style="display: none;">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h4><i class="fas fa-boxes me-2"></i>OCP OptiStock</h4>
+                <div class="d-flex align-items-center mt-2">
+                    <div class="bg-light rounded-circle me-2" style="width: 36px; height: 36px;"></div>
+                    <div>
+                        <div id="user-name" class="fw-bold">Administrator</div>
+                        <div id="user-role" class="small opacity-75">Admin</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-section="dashboard">
+                            <i class="fas fa-chart-line"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="inventory">
+                            <i class="fas fa-box"></i> Inventory
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="forecasting">
+                            <i class="fas fa-chart-bar"></i> Forecasting
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="analytics">
+                            <i class="fas fa-chart-pie"></i> Analytics
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="ai-insights">
+                            <i class="fas fa-robot"></i> AI Insights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="settings">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-auto p-3 text-center">
+                <button id="logout-btn" class="btn btn-outline-light btn-sm">
+                    <i class="fas fa-sign-out-alt me-1"></i> Logout
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h5 id="current-section">Dashboard</h5>
+            </div>
+
+            <!-- Chat Messages Container -->
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will be dynamically inserted here -->
+            </div>
+
+            <!-- Input Container -->
+            <div class="input-container">
+                <div class="input-group">
+                    <textarea id="message-input" class="form-control message-input"
+                              placeholder="Type your message or inventory query..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+
+                <div class="suggestions-container">
+                    <div class="suggestion-chip">Show low stock items</div>
+                    <div class="suggestion-chip">Forecast for Phosphate Rock</div>
+                    <div class="suggestion-chip">Inventory summary</div>
+                    <div class="suggestion-chip">Stock movement analytics</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // App state
+        const appState = {
+            authenticated: false,
+            currentUser: null,
+            currentSection: 'dashboard',
+            messages: []
+        };
+
+        // DOM Elements
+        const loginPage = document.getElementById('login-page');
+        const appContainer = document.getElementById('app-container');
+        const chatMessages = document.getElementById('chat-messages');
+        const messageInput = document.getElementById('message-input');
+        const sendBtn = document.getElementById('send-btn');
+        const loginBtn = document.getElementById('login-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const loginError = document.getElementById('login-error');
+        const userName = document.getElementById('user-name');
+        const userRole = document.getElementById('user-role');
+        const currentSection = document.getElementById('current-section');
+
+        // Initialize the app
+        function initApp() {
+            // Check if user is already authenticated
+            const token = localStorage.getItem('ocp_token');
+            if (token) {
+                // In a real app, we would verify the token with the server
+                appState.authenticated = true;
+                appState.currentUser = JSON.parse(localStorage.getItem('ocp_user'));
+                showApp();
+            } else {
+                showLogin();
+            }
+
+            // Setup event listeners
+            setupEventListeners();
+        }
+
+        // Show login page
+        function showLogin() {
+            loginPage.style.display = 'block';
+            appContainer.style.display = 'none';
+        }
+
+        // Show main application
+        function showApp() {
+            loginPage.style.display = 'none';
+            appContainer.style.display = 'flex';
+
+            // Set user info
+            userName.textContent = appState.currentUser.username;
+            userRole.textContent = appState.currentUser.role;
+
+            // Load initial chat message
+            addMessage('bot', 'Welcome to OCP OptiStock! How can I assist you with inventory management today?', new Date());
+
+            // Load dashboard data
+            if (appState.currentSection === 'dashboard') {
+                loadDashboardData();
+            }
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Login button
+            loginBtn.addEventListener('click', handleLogin);
+
+            // Logout button
+            logoutBtn.addEventListener('click', handleLogout);
+
+            // Send message on button click
+            sendBtn.addEventListener('click', sendMessage);
+
+            // Send message on Enter key (without Shift)
+            messageInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    if (messageInput.value.trim() !== '') {
+                        sendMessage();
+                    }
+                }
+            });
+
+            // Enable/disable send button based on input
+            messageInput.addEventListener('input', () => {
+                sendBtn.disabled = messageInput.value.trim() === '';
+            });
+
+            // Auto-resize textarea
+            messageInput.addEventListener('input', autoResize);
+
+            // Navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const section = link.dataset.section;
+                    changeSection(section);
+                });
+            });
+
+            // Suggestion chips
+            document.querySelectorAll('.suggestion-chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    messageInput.value = chip.textContent;
+                    sendBtn.disabled = false;
+                });
+            });
+        }
+
+        // Handle login
+        function handleLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+
+            // In a real app, this would be an API call to the backend
+            // Simulating authentication with mock data
+            if (username && password) {
+                // Mock authentication
+                const role = username === 'admin' ? 'admin' :
+                             username === 'manager' ? 'manager' : 'user';
+
+                appState.authenticated = true;
+                appState.currentUser = { username, role };
+
+                // Save to localStorage if "remember me" is checked
+                if (remember) {
+                    localStorage.setItem('ocp_token', 'mock_token');
+                    localStorage.setItem('ocp_user', JSON.stringify(appState.currentUser));
+                }
+
+                showApp();
+            } else {
+                loginError.style.display = 'block';
+            }
+        }
+
+        // Handle logout
+        function handleLogout() {
+            appState.authenticated = false;
+            appState.currentUser = null;
+            localStorage.removeItem('ocp_token');
+            localStorage.removeItem('ocp_user');
+            showLogin();
+        }
+
+        // Change section
+        function changeSection(section) {
+            appState.currentSection = section;
+            currentSection.textContent = section.charAt(0).toUpperCase() + section.slice(1);
+
+            // Update active nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.section === section) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Clear chat messages
+            chatMessages.innerHTML = '';
+            appState.messages = [];
+
+            // Add welcome message based on section
+            let welcomeMessage = '';
+            switch(section) {
+                case 'dashboard':
+                    welcomeMessage = 'Here is your inventory dashboard overview.';
+                    loadDashboardData();
+                    break;
+                case 'inventory':
+                    welcomeMessage = 'You can manage your inventory here. What would you like to do?';
+                    loadInventoryData();
+                    break;
+                case 'forecasting':
+                    welcomeMessage = 'Forecasting tools are available. Which item would you like to forecast?';
+                    break;
+                case 'analytics':
+                    welcomeMessage = 'Inventory analytics and movement reports are available.';
+                    loadAnalyticsData();
+                    break;
+                case 'ai-insights':
+                    welcomeMessage = 'Ask me anything about your inventory or request AI insights.';
+                    break;
+                case 'settings':
+                    welcomeMessage = 'Account and system settings can be managed here.';
+                    break;
+            }
+
+            addMessage('bot', welcomeMessage, new Date());
+        }
+
+        // Auto-resize textarea
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        }
+
+        // Add message to chat
+        function addMessage(sender, content, timestamp) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = content;
+
+            const timeDiv = document.createElement('div');
+            timeDiv.className = 'message-timestamp';
+            timeDiv.textContent = formatTime(timestamp);
+
+            messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(timeDiv);
+            chatMessages.appendChild(messageDiv);
+
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Save message to state
+            appState.messages.push({ sender, content, timestamp });
+        }
+
+        // Format timestamp
+        function formatTime(date) {
+            return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // Send message
+        function sendMessage() {
+            const content = messageInput.value.trim();
+            if (content === '') return;
+
+            // Add user message
+            addMessage('user', content, new Date());
+
+            // Clear input
+            messageInput.value = '';
+            sendBtn.disabled = true;
+            messageInput.style.height = 'auto';
+
+            // Process message based on current section
+            setTimeout(() => {
+                let response = '';
+
+                switch(appState.currentSection) {
+                    case 'dashboard':
+                        response = generateDashboardResponse(content);
+                        break;
+                    case 'inventory':
+                        response = generateInventoryResponse(content);
+                        break;
+                    case 'forecasting':
+                        response = generateForecastResponse(content);
+                        break;
+                    case 'analytics':
+                        response = generateAnalyticsResponse(content);
+                        break;
+                    case 'ai-insights':
+                        response = generateAIResponse(content);
+                        break;
+                    default:
+                        response = "I can help with that. What specifically would you like to know?";
+                }
+
+                addMessage('bot', response, new Date());
+            }, 1000);
+        }
+
+        // Generate dashboard response
+        function generateDashboardResponse(content) {
+            const lowerContent = content.toLowerCase();
+
+            if (lowerContent.includes('low stock') || lowerContent.includes('critical')) {
+                return `Here are your low stock items:
+
+                - Phosphate Rock: 15,000 Tons (Min: 5,000)
+                - Safety Equipment: 450 Units (Min: 100)
+
+                I recommend placing orders for these items soon.`;
+            } else if (lowerContent.includes('summary') || lowerContent.includes('overview')) {
+                return `Inventory Summary:
+                - Total Items: 25
+                - Total Value: $1,245,000
+                - Low Stock Items: 2
+                - Categories: 5
+
+                Everything looks good except for a couple of low stock items.`;
+            } else if (lowerContent.includes('category')) {
+                return `Inventory by Category:
+                - Raw Materials: 15,000 Tons
+                - Chemicals: 4,300 Liters
+                - Safety: 450 Units
+                - Equipment: 120 Units
+
+                Raw materials make up the bulk of our inventory value.`;
+            } else {
+                return `I can show you inventory summaries, low stock alerts, and category breakdowns. What would you like to see?`;
+            }
+        }
+
+        // Generate inventory response
+        function generateInventoryResponse(content) {
+            const lowerContent = content.toLowerCase();
+
+            if (lowerContent.includes('add') || lowerContent.includes('new')) {
+                return `To add a new inventory item, please use the form in the inventory management section.
+                You'll need the item ID, name, category, initial stock level, unit, thresholds, cost, and supplier.`;
+            } else if (lowerContent.includes('update') || lowerContent.includes('edit')) {
+                return `To update an inventory item, please navigate to the item in the inventory list and click "Edit".
+                You can modify stock levels, thresholds, and other details.`;
+            } else if (lowerContent.includes('export') || lowerContent.includes('download')) {
+                return `You can export the complete inventory data as a CSV file.
+                Would you like me to generate the export now?`;
+            } else if (lowerContent.includes('import') || lowerContent.includes('upload')) {
+                return `To import inventory data, you'll need a CSV file with the required columns.
+                Would you like a template file to get started?`;
+            } else {
+                return `I can help you add, update, export, or import inventory items. What would you like to do?`;
+            }
+        }
+
+        // Generate forecast response
+        function generateForecastResponse(content) {
+            const lowerContent = content.toLowerCase();
+
+            if (lowerContent.includes('phosphate') || lowerContent.includes('rock')) {
+                return `Forecast for Phosphate Rock:
+                - Current stock: 15,000 Tons
+                - Forecast for next 30 days shows stable demand
+                - Risk level: Low
+                - Recommendation: Maintain current stock levels`;
+            } else if (lowerContent.includes('safety') || lowerContent.includes('equipment')) {
+                return `Forecast for Safety Equipment:
+                - Current stock: 450 Units
+                - Forecast shows increasing demand
+                - Risk level: Medium
+                - Recommendation: Increase stock by 20%`;
+            } else if (lowerContent.includes('acid') || lowerContent.includes('sulfuric')) {
+                return `Forecast for Sulfuric Acid:
+                - Current stock: 2,500 Liters
+                - Forecast shows stable demand
+                - Risk level: Low
+                - Recommendation: Maintain current stock levels`;
+            } else {
+                return `I can forecast inventory needs for specific items. Please specify which item you're interested in.`;
+            }
+        }
+
+        // Generate analytics response
+        function generateAnalyticsResponse(content) {
+            const lowerContent = content.toLowerCase();
+
+            if (lowerContent.includes('movement') || lowerContent.includes('activity')) {
+                return `Inventory Movement Analysis:
+                - Average daily inbound: 1,200 units
+                - Average daily outbound: 1,350 units
+                - Most active item: Phosphate Rock
+                - Least active item: Mining Tools
+
+                Full report is available in the analytics section.`;
+            } else if (lowerContent.includes('trend') || lowerContent.includes('pattern')) {
+                return `Inventory Trends:
+                - Raw materials: Steady increase in consumption
+                - Safety equipment: Seasonal spikes in Q3
+                - Chemicals: Consistent usage patterns
+
+                Would you like to see detailed trend charts?`;
+            } else {
+                return `I can show you inventory movement patterns and trends. What would you like to analyze?`;
+            }
+        }
+
+        // Generate AI response
+        function generateAIResponse(content) {
+            const lowerContent = content.toLowerCase();
+
+            if (lowerContent.includes('optimization') || lowerContent.includes('improve')) {
+                return `Based on AI analysis of your inventory:
+                1. Reduce phosphate rock safety stock by 10% to save $85,000 annually
+                2. Implement just-in-time delivery for safety equipment
+                3. Consolidate chemical orders to qualify for bulk discounts
+                4. Automate reordering for low-value, high-turnover items`;
+            } else if (lowerContent.includes('cost') || lowerContent.includes('save')) {
+                return `Cost Saving Opportunities:
+                - Safety equipment: Switch to SafetyPro for 12% cost reduction
+                - Chemicals: Negotiate contract with ChemGlobal for bulk discounts
+                - Mining tools: Extend tool life through maintenance program
+                - Total potential savings: $245,000/year`;
+            } else if (lowerContent.includes('risk') || lowerContent.includes('problem')) {
+                return `Inventory Risk Assessment:
+                - High risk: Safety equipment (stock levels below threshold)
+                - Medium risk: Sulfuric acid (supplier reliability concerns)
+                - Low risk: Other inventory items
+
+                Recommendations:
+                - Diversify safety equipment suppliers
+                - Increase safety stock buffer for critical items`;
+            } else {
+                return `I've analyzed your inventory data. Here are some insights:
+                - Your inventory turnover ratio is 6.2, which is healthy for your industry
+                - Carrying costs represent 22% of inventory value (industry avg: 25%)
+                - Stockout risk is moderate (3% probability for next quarter)`;
+            }
+        }
+
+        // Load dashboard data
+        function loadDashboardData() {
+            // This would normally be an API call
+            setTimeout(() => {
+                const dashboardHTML = `
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Items</div>
+                        <div class="stat-value">25</div>
+                        <div class="small text-success">+3 from last month</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Value</div>
+                        <div class="stat-value">$1.24M</div>
+                        <div class="small text-success">+2.4% from last month</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Low Stock</div>
+                        <div class="stat-value">2</div>
+                        <div class="small text-danger">Requires attention</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Categories</div>
+                        <div class="stat-value">5</div>
+                        <div class="small text-muted">No changes</div>
+                    </div>
+                </div>
+
+                <div class="inventory-card">
+                    <div class="card-header">Low Stock Items</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Item ID</th>
+                                        <th>Item Name</th>
+                                        <th>Category</th>
+                                        <th>Current Stock</th>
+                                        <th>Min Threshold</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ITM001</td>
+                                        <td>Phosphate Rock</td>
+                                        <td>Raw Materials</td>
+                                        <td>15,000 Tons</td>
+                                        <td>5,000 Tons</td>
+                                        <td><span class="badge badge-low">Critical</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM004</td>
+                                        <td>Safety Equipment</td>
+                                        <td>Safety</td>
+                                        <td>450 Units</td>
+                                        <td>100 Units</td>
+                                        <td><span class="badge badge-low">Critical</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM002</td>
+                                        <td>Sulfuric Acid</td>
+                                        <td>Chemicals</td>
+                                        <td>2,500 Liters</td>
+                                        <td>500 Liters</td>
+                                        <td><span class="badge badge-normal">Normal</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>`;
+
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message bot-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">
+                        <div>${dashboardHTML}</div>
+                    </div>
+                    <div class="message-timestamp">${formatTime(new Date())}</div>
+                `;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 500);
+        }
+
+        // Load inventory data
+        function loadInventoryData() {
+            // This would normally be an API call
+            setTimeout(() => {
+                const inventoryHTML = `
+                <div class="inventory-card">
+                    <div class="card-header">Current Inventory</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Item ID</th>
+                                        <th>Item Name</th>
+                                        <th>Category</th>
+                                        <th>Current Stock</th>
+                                        <th>Unit</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ITM001</td>
+                                        <td>Phosphate Rock</td>
+                                        <td>Raw Materials</td>
+                                        <td>15,000</td>
+                                        <td>Tons</td>
+                                        <td><span class="badge badge-low">Low</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM002</td>
+                                        <td>Sulfuric Acid</td>
+                                        <td>Chemicals</td>
+                                        <td>2,500</td>
+                                        <td>Liters</td>
+                                        <td><span class="badge badge-normal">Normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM003</td>
+                                        <td>Ammonia</td>
+                                        <td>Chemicals</td>
+                                        <td>1,800</td>
+                                        <td>Liters</td>
+                                        <td><span class="badge badge-normal">Normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM004</td>
+                                        <td>Safety Equipment</td>
+                                        <td>Safety</td>
+                                        <td>450</td>
+                                        <td>Units</td>
+                                        <td><span class="badge badge-low">Low</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITM005</td>
+                                        <td>Mining Tools</td>
+                                        <td>Equipment</td>
+                                        <td>120</td>
+                                        <td>Units</td>
+                                        <td><span class="badge badge-normal">Normal</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>`;
+
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message bot-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">
+                        <div>${inventoryHTML}</div>
+                    </div>
+                    <div class="message-timestamp">${formatTime(new Date())}</div>
+                `;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 500);
+        }
+
+        // Load analytics data
+        function loadAnalyticsData() {
+            // This would normally be an API call
+            setTimeout(() => {
+                const analyticsHTML = `
+                <div class="inventory-card">
+                    <div class="card-header">Inventory Movement (Last 30 Days)</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Inbound</th>
+                                        <th>Outbound</th>
+                                        <th>Net Change</th>
+                                        <th>Movement Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Phosphate Rock</td>
+                                        <td>8,200 Tons</td>
+                                        <td>9,500 Tons</td>
+                                        <td class="text-danger">-1,300 Tons</td>
+                                        <td>Consumption</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sulfuric Acid</td>
+                                        <td>1,200 Liters</td>
+                                        <td>1,100 Liters</td>
+                                        <td class="text-success">+100 Liters</td>
+                                        <td>Production</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Safety Equipment</td>
+                                        <td>150 Units</td>
+                                        <td>220 Units</td>
+                                        <td class="text-danger">-70 Units</td>
+                                        <td>Distribution</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ammonia</td>
+                                        <td>800 Liters</td>
+                                        <td>750 Liters</td>
+                                        <td class="text-success">+50 Liters</td>
+                                        <td>Production</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>`;
+
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message bot-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">
+                        <div>${analyticsHTML}</div>
+                    </div>
+                    <div class="message-timestamp">${formatTime(new Date())}</div>
+                `;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 500);
+        }
+
+        // Initialize the application
+        initApp();
+    </script>
+</body>
+</html>

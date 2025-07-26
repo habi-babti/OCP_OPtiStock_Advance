@@ -1,0 +1,6 @@
+item_id,item_name,category,current_stock,unit,min_threshold,max_threshold,unit_cost,supplier,last_updated
+ITM001,Phosphate Rock,Raw Materials,15000,Tons,5000,20000,85.5,Local Mine A,2025-07-23
+ITM002,Sulfuric Acid,Chemicals,2500,Liters,500,5000,1.2,ChemCorp,2025-07-23
+ITM003,Ammonia,Chemicals,1800,Liters,300,3000,2.8,ChemCorp,2025-07-23
+ITM004,Safety Equipment,Safety,450,Units,100,1000,125.0,SafetyFirst,2025-07-23
+ITM005,Mining Tools,Equipment,120,Units,50,200,350.0,ToolsInc,2025-07-23

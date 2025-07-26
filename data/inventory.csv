@@ -1,0 +1,401 @@
+name,category,current_stock,min_stock,unit,last_updated,item_id,item_name,min_threshold,max_threshold,unit_cost,supplier
+Ammonium Phosphate,Raw Material,1250,500,tons,2024-01-15,1,Ammonium Phosphate,500,1000,150.00,ChemCorp
+Sulfuric Acid,Chemicals,8500,3000,liters,2024-01-18,2,Sulfuric Acid,3000,6000,85.50,AcidSuppliers
+Phosphate Rock,Raw Material,42000,15000,tons,2024-01-20,3,Phosphate Rock,15000,30000,45.75,MineCo
+Diesel Fuel,Chemicals,12500,5000,liters,2024-01-17,4,Diesel Fuel,5000,10000,1.20,FuelGlobal
+Conveyor Belts,Equipment,85,30,units,2024-01-10,5,Conveyor Belts,30,60,1200.00,MachineryLtd
+Heavy Duty Pumps,Equipment,22,10,units,2024-01-19,6,Heavy Duty Pumps,10,20,8500.00,PumpWorks
+PPE Kits,Equipment,320,100,units,2024-01-16,7,PPE Kits,100,200,25.00,SafetyGear
+Calcium Carbonate,Chemicals,7800,2500,kg,2024-01-14,8,Calcium Carbonate,2500,5000,0.75,MineralInc
+DAP Fertilizer,Finished Goods,9800,4000,tons,2024-01-21,9,DAP Fertilizer,4000,8000,350.00,AgroProducts
+MAP Fertilizer,Finished Goods,7500,3000,tons,2024-01-12,10,MAP Fertilizer,3000,6000,320.00,AgroProducts
+Flotation Reagents,Chemicals,4200,1500,kg,2024-01-11,11,Flotation Reagents,1500,3000,12.80,ChemSpecialty
+Crusher Spare Parts,Equipment,45,20,units,2024-01-09,12,Crusher Spare Parts,20,40,345.00,MachineryLtd
+Phosphoric Acid,Chemicals,6800,2000,liters,2024-01-13,13,Phosphoric Acid,2000,4000,2.10,AcidSuppliers
+Packaging Bags,Finished Goods,12500,5000,units,2024-01-08,14,Packaging Bags,5000,10000,0.45,PackagingWorld
+Heavy Machinery Lubricant,Chemicals,3200,1000,liters,2024-01-07,15,Heavy Machinery Lubricant,1000,2000,8.25,LubeTech
+Nitric Acid,Chemicals,5800,2000,liters,2024-02-01,16,Nitric Acid,2000,4000,3.20,AcidSuppliers
+Potassium Chloride,Raw Material,18500,7000,tons,2024-02-02,17,Potassium Chloride,7000,14000,220.00,MineCo
+Safety Glasses,Equipment,420,150,units,2024-02-03,18,Safety Glasses,150,300,15.00,SafetyGear
+Rubber Hoses,Equipment,75,25,units,2024-02-04,19,Rubber Hoses,25,50,85.00,MachineryLtd
+Ammonium Nitrate,Chemicals,6500,2500,kg,2024-02-05,20,Ammonium Nitrate,2500,5000,1.80,ChemCorp
+NPK Fertilizer,Finished Goods,8200,3500,tons,2024-02-06,21,NPK Fertilizer,3500,7000,280.00,AgroProducts
+Hydraulic Oil,Chemicals,2800,1000,liters,2024-02-07,22,Hydraulic Oil,1000,2000,12.50,LubeTech
+Filter Press,Equipment,15,5,units,2024-02-08,23,Filter Press,5,10,12500.00,MachineryLtd
+Sodium Hydroxide,Chemicals,4800,1800,kg,2024-02-09,24,Sodium Hydroxide,1800,3600,2.40,ChemSpecialty
+Bulk Bags,Finished Goods,11000,4500,units,2024-02-10,25,Bulk Bags,4500,9000,1.20,PackagingWorld
+Ball Mill Liners,Equipment,28,10,units,2024-02-11,26,Ball Mill Liners,10,20,3200.00,MineEquipment
+Urea,Raw Material,14500,6000,tons,2024-02-12,27,Urea,6000,12000,180.00,ChemCorp
+Grease Cartridges,Chemicals,950,300,units,2024-02-13,28,Grease Cartridges,300,600,8.75,LubeTech
+Hard Hats,Equipment,380,120,units,2024-02-14,29,Hard Hats,120,240,18.00,SafetyGear
+Sulfur,Raw Material,22000,8000,tons,2024-02-15,30,Sulfur,8000,16000,95.00,MineCo
+Concrete Mixers,Equipment,12,4,units,2024-02-16,31,Concrete Mixers,4,8,9800.00,ConstructionEq
+Hydrochloric Acid,Chemicals,5200,2000,liters,2024-02-17,32,Hydrochloric Acid,2000,4000,1.95,AcidSuppliers
+Granulation Drums,Equipment,8,3,units,2024-02-18,33,Granulation Drums,3,6,18500.00,MachineryLtd
+Potash,Raw Material,16500,7000,tons,2024-02-19,34,Potash,7000,14000,210.00,MineCo
+Dust Masks,Equipment,650,200,units,2024-02-20,35,Dust Masks,200,400,3.50,SafetyGear
+Ammonia Solution,Chemicals,4200,1500,liters,2024-02-21,36,Ammonia Solution,1500,3000,2.80,ChemCorp
+Forklift Tires,Equipment,25,8,units,2024-02-22,37,Forklift Tires,8,16,450.00,VehicleParts
+Magnesium Sulfate,Chemicals,3800,1200,kg,2024-02-23,38,Magnesium Sulfate,1200,2400,1.25,MineralInc
+Pallets,Finished Goods,8500,3000,units,2024-02-24,39,Pallets,3000,6000,15.00,PackagingWorld
+Conveyor Rollers,Equipment,65,20,units,2024-02-25,40,Conveyor Rollers,20,40,95.00,MachineryLtd
+Zinc Sulfate,Chemicals,2900,1000,kg,2024-02-26,41,Zinc Sulfate,1000,2000,3.40,ChemSpecialty
+Steel Drums,Finished Goods,3200,1200,units,2024-02-27,42,Steel Drums,1200,2400,28.00,PackagingWorld
+Belt Fasteners,Equipment,120,40,units,2024-02-28,43,Belt Fasteners,40,80,35.00,MachineryLtd
+Ferrous Sulfate,Chemicals,4100,1500,kg,2024-02-29,44,Ferrous Sulfate,1500,3000,2.10,MineralInc
+Safety Boots,Equipment,240,80,units,2024-03-01,45,Safety Boots,80,160,45.00,SafetyGear
+Bulk Tankers,Equipment,5,2,units,2024-03-02,46,Bulk Tankers,2,4,25000.00,VehicleParts
+Aluminum Sulfate,Chemicals,3600,1200,kg,2024-03-03,47,Aluminum Sulfate,1200,2400,1.90,ChemSpecialty
+Stretch Wrap,Finished Goods,18500,7000,rolls,2024-03-04,48,Stretch Wrap,7000,14000,12.00,PackagingWorld
+Gearboxes,Equipment,18,6,units,2024-03-05,49,Gearboxes,6,12,4200.00,MachineryLtd
+Liquid Nitrogen,Chemicals,2800,1000,liters,2024-03-06,50,Liquid Nitrogen,1000,2000,5.60,ChemCorp
+Bearing Assemblies,Equipment,42,15,units,2024-03-07,51,Bearing Assemblies,15,30,285.00,MachineryLtd
+Copper Sulfate,Chemicals,3200,1100,kg,2024-03-08,52,Copper Sulfate,1100,2200,4.20,MineralInc
+Forklift Batteries,Equipment,14,5,units,2024-03-09,53,Forklift Batteries,5,10,1200.00,VehicleParts
+Bulk Containers,Finished Goods,2800,1000,units,2024-03-10,54,Bulk Containers,1000,2000,75.00,PackagingWorld
+Hydraulic Hoses,Equipment,38,12,units,2024-03-11,55,Hydraulic Hoses,12,24,180.00,MachineryLtd
+Sodium Silicate,Chemicals,4100,1500,kg,2024-03-12,56,Sodium Silicate,1500,3000,2.80,ChemSpecialty
+Drum Pumps,Equipment,22,8,units,2024-03-13,57,Drum Pumps,8,16,650.00,PumpWorks
+Manganese Dioxide,Chemicals,2900,1000,kg,2024-03-14,58,Manganese Dioxide,1000,2000,3.10,MineralInc
+Safety Harnesses,Equipment,85,30,units,2024-03-15,59,Safety Harnesses,30,60,95.00,SafetyGear
+Bulk Hoppers,Equipment,9,3,units,2024-03-16,60,Bulk Hoppers,3,6,8500.00,MachineryLtd
+Acetic Acid,Chemicals,3800,1400,liters,2024-03-17,61,Acetic Acid,1400,2800,3.40,AcidSuppliers
+Steel Strapping,Finished Goods,12500,5000,rolls,2024-03-18,62,Steel Strapping,5000,10000,8.50,PackagingWorld
+Electric Motors,Equipment,24,8,units,2024-03-19,63,Electric Motors,8,16,1250.00,MachineryLtd
+Calcium Chloride,Chemicals,5200,1800,kg,2024-03-20,64,Calcium Chloride,1800,3600,1.20,MineralInc
+Pallet Jacks,Equipment,16,6,units,2024-03-21,65,Pallet Jacks,6,12,850.00,VehicleParts
+Bulk Silos,Equipment,7,2,units,2024-03-22,66,Bulk Silos,2,4,32000.00,MachineryLtd
+Formic Acid,Chemicals,3100,1100,liters,2024-03-23,67,Formic Acid,1100,2200,4.80,AcidSuppliers
+Plastic Liners,Finished Goods,18500,7000,units,2024-03-24,68,Plastic Liners,7000,14000,2.10,PackagingWorld
+Conveyor Motors,Equipment,32,12,units,2024-03-25,69,Conveyor Motors,12,24,750.00,MachineryLtd
+Sodium Bicarbonate,Chemicals,6800,2500,kg,2024-03-26,70,Sodium Bicarbonate,2500,5000,0.95,ChemSpecialty
+Forklift Forks,Equipment,28,10,units,2024-03-27,71,Forklift Forks,10,20,320.00,VehicleParts
+Bulk Loaders,Equipment,6,2,units,2024-03-28,72,Bulk Loaders,2,4,18500.00,MachineryLtd
+Citric Acid,Chemicals,4200,1500,kg,2024-03-29,73,Citric Acid,1500,3000,2.60,ChemSpecialty
+Barrel Pumps,Equipment,35,12,units,2024-03-30,74,Barrel Pumps,12,24,450.00,PumpWorks
+Potassium Hydroxide,Chemicals,3800,1300,kg,2024-03-31,75,Potassium Hydroxide,1300,2600,3.20,ChemCorp
+Safety Cones,Equipment,180,60,units,2024-04-01,76,Safety Cones,60,120,12.00,SafetyGear
+Bulk Unloaders,Equipment,8,3,units,2024-04-02,77,Bulk Unloaders,3,6,14200.00,MachineryLtd
+Oxalic Acid,Chemicals,2900,1000,kg,2024-04-03,78,Oxalic Acid,1000,2000,3.80,ChemSpecialty
+Drum Dollies,Equipment,42,15,units,2024-04-04,79,Drum Dollies,15,30,85.00,VehicleParts
+Bulk Scales,Equipment,14,5,units,2024-04-05,80,Bulk Scales,5,10,6500.00,MachineryLtd
+Sodium Hypochlorite,Chemicals,5200,1800,liters,2024-04-06,81,Sodium Hypochlorite,1800,3600,1.40,ChemCorp
+Belt Scrapers,Equipment,65,20,units,2024-04-07,82,Belt Scrapers,20,40,45.00,MachineryLtd
+Magnesium Oxide,Chemicals,4100,1500,kg,2024-04-08,83,Magnesium Oxide,1500,3000,1.60,MineralInc
+Forklift Attachments,Equipment,23,8,units,2024-04-09,84,Forklift Attachments,8,16,550.00,VehicleParts
+Bulk Conveyors,Equipment,11,4,units,2024-04-10,85,Bulk Conveyors,4,8,12500.00,MachineryLtd
+Phosphoric Rock,Raw Material,38000,15000,tons,2024-04-11,86,Phosphoric Rock,15000,30000,48.00,MineCo
+Safety Barriers,Equipment,95,30,units,2024-04-12,87,Safety Barriers,30,60,65.00,SafetyGear
+Bulk Mixers,Equipment,9,3,units,2024-04-13,88,Bulk Mixers,3,6,18500.00,MachineryLtd
+Sodium Carbonate,Chemicals,6200,2200,kg,2024-04-14,89,Sodium Carbonate,2200,4400,0.85,ChemSpecialty
+Drum Seals,Equipment,120,40,units,2024-04-15,90,Drum Seals,40,80,12.00,PackagingWorld
+Bulk Crushers,Equipment,7,2,units,2024-04-16,91,Bulk Crushers,2,4,28500.00,MachineryLtd
+Ferric Chloride,Chemicals,3500,1200,kg,2024-04-17,92,Ferric Chloride,1200,2400,2.90,ChemSpecialty
+Pallet Racks,Equipment,25,8,units,2024-04-18,93,Pallet Racks,8,16,320.00,StorageSol
+Bulk Screens,Equipment,13,5,units,2024-04-19,94,Bulk Screens,5,10,8500.00,MachineryLtd
+Potassium Carbonate,Chemicals,4100,1500,kg,2024-04-20,95,Potassium Carbonate,1500,3000,2.40,ChemCorp
+Safety Signs,Equipment,280,90,units,2024-04-21,96,Safety Signs,90,180,8.50,SafetyGear
+Bulk Dryers,Equipment,6,2,units,2024-04-22,97,Bulk Dryers,2,4,22500.00,MachineryLtd
+Ammonium Sulfate,Chemicals,5800,2000,kg,2024-04-23,98,Ammonium Sulfate,2000,4000,1.10,ChemCorp
+Drum Covers,Equipment,75,25,units,2024-04-24,99,Drum Covers,25,50,18.00,PackagingWorld
+Bulk Elevators,Equipment,8,3,units,2024-04-25,100,Bulk Elevators,3,6,16500.00,MachineryLtd
+Sodium Sulfate,Chemicals,4800,1600,kg,2024-04-26,101,Sodium Sulfate,1600,3200,0.95,ChemSpecialty
+Safety Gloves,Equipment,420,140,units,2024-04-27,102,Safety Gloves,140,280,5.50,SafetyGear
+Bulk Grinders,Equipment,5,2,units,2024-04-28,103,Bulk Grinders,2,4,32500.00,MachineryLtd
+Hydrogen Peroxide,Chemicals,3200,1100,liters,2024-04-29,104,Hydrogen Peroxide,1100,2200,4.20,ChemCorp
+Drum Labels,Finished Goods,18500,7000,units,2024-04-30,105,Drum Labels,7000,14000,0.15,PackagingWorld
+Bulk Mills,Equipment,7,2,units,2024-05-01,106,Bulk Mills,2,4,28500.00,MachineryLtd
+Calcium Sulfate,Chemicals,3800,1300,kg,2024-05-02,107,Calcium Sulfate,1300,2600,1.30,MineralInc
+Safety Vests,Equipment,350,120,units,2024-05-03,108,Safety Vests,120,240,12.00,SafetyGear
+Bulk Presses,Equipment,6,2,units,2024-05-04,109,Bulk Presses,2,4,24500.00,MachineryLtd
+Nitrogen Gas,Chemicals,4200,1500,liters,2024-05-05,110,Nitrogen Gas,1500,3000,3.80,ChemCorp
+Drum Pallets,Equipment,45,15,units,2024-05-06,111,Drum Pallets,15,30,95.00,StorageSol
+Bulk Separators,Equipment,8,3,units,2024-05-07,112,Bulk Separators,3,6,18500.00,MachineryLtd
+Zinc Oxide,Chemicals,3200,1100,kg,2024-05-08,113,Zinc Oxide,1100,2200,4.50,MineralInc
+Safety Goggles,Equipment,280,90,units,2024-05-09,114,Safety Goggles,90,180,9.50,SafetyGear
+Bulk Sifters,Equipment,7,2,units,2024-05-10,115,Bulk Sifters,2,4,16500.00,MachineryLtd
+Sodium Phosphate,Chemicals,4500,1500,kg,2024-05-11,116,Sodium Phosphate,1500,3000,2.20,ChemSpecialty
+Drum Pumps Electric,Equipment,18,6,units,2024-05-12,117,Drum Pumps Electric,6,12,950.00,PumpWorks
+Bulk Stirrers,Equipment,9,3,units,2024-05-13,118,Bulk Stirrers,3,6,12500.00,MachineryLtd
+Ferrous Oxide,Chemicals,3800,1300,kg,2024-05-14,119,Ferrous Oxide,1300,2600,1.80,MineralInc
+Safety Helmets,Equipment,320,100,units,2024-05-15,120,Safety Helmets,100,200,22.00,SafetyGear
+Bulk Tanks,Equipment,5,2,units,2024-05-16,121,Bulk Tanks,2,4,35000.00,MachineryLtd
+Potassium Phosphate,Chemicals,4200,1500,kg,2024-05-17,122,Potassium Phosphate,1500,3000,3.10,ChemSpecialty
+Drum Scales,Equipment,22,8,units,2024-05-18,123,Drum Scales,8,16,650.00,MachineryLtd
+Bulk Valves,Equipment,65,20,units,2024-05-19,124,Bulk Valves,20,40,85.00,MachineryLtd
+Aluminum Oxide,Chemicals,3800,1300,kg,2024-05-20,125,Aluminum Oxide,1300,2600,2.40,MineralInc
+Safety Lanyards,Equipment,180,60,units,2024-05-21,126,Safety Lanyards,60,120,8.00,SafetyGear
+Bulk Weighers,Equipment,12,4,units,2024-05-22,127,Bulk Weighers,4,8,9500.00,MachineryLtd
+Magnesium Phosphate,Chemicals,3200,1100,kg,2024-05-23,128,Magnesium Phosphate,1100,2200,3.30,ChemSpecialty
+Drum Trucks,Equipment,28,10,units,2024-05-24,129,Drum Trucks,10,20,320.00,VehicleParts
+Bulk Winches,Equipment,7,2,units,2024-05-25,130,Bulk Winches,2,4,12500.00,MachineryLtd
+Calcium Phosphate,Chemicals,4500,1500,kg,2024-05-26,131,Calcium Phosphate,1500,3000,1.90,MineralInc
+Safety Rails,Equipment,95,30,units,2024-05-27,132,Safety Rails,30,60,45.00,SafetyGear
+Bulk Wrenches,Equipment,15,5,units,2024-05-28,133,Bulk Wrenches,5,10,85.00,MachineryLtd
+Sodium Silicofluoride,Chemicals,3800,1300,kg,2024-05-29,134,Sodium Silicofluoride,1300,2600,2.80,ChemSpecialty
+Drum Wrenches,Equipment,42,15,units,2024-05-30,135,Drum Wrenches,15,30,25.00,MachineryLtd
+Bulk Xray Machines,Equipment,3,1,units,2024-05-31,136,Bulk Xray Machines,1,2,45000.00,MachineryLtd
+Ferric Oxide,Chemicals,5200,1800,kg,2024-06-01,137,Ferric Oxide,1800,3600,1.20,MineralInc
+Safety Shields,Equipment,120,40,units,2024-06-02,138,Safety Shields,40,80,35.00,SafetyGear
+Bulk Y-Strainers,Equipment,28,10,units,2024-06-03,139,Bulk Y-Strainers,10,20,150.00,MachineryLtd
+Potassium Silicate,Chemicals,3800,1300,kg,2024-06-04,140,Potassium Silicate,1300,2600,3.50,ChemSpecialty
+Drum Yokes,Equipment,35,12,units,2024-06-05,141,Drum Yokes,12,24,65.00,MachineryLtd
+Bulk Zippers,Finished Goods,12500,5000,units,2024-06-06,142,Bulk Zippers,5000,10000,0.75,PackagingWorld
+Calcium Silicate,Chemicals,4200,1500,kg,2024-06-07,143,Calcium Silicate,1500,3000,1.40,MineralInc
+Safety Sirens,Equipment,25,8,units,2024-06-08,144,Safety Sirens,8,16,120.00,SafetyGear
+Bulk Actuators,Equipment,18,6,units,2024-06-09,145,Bulk Actuators,6,12,850.00,MachineryLtd
+Sodium Aluminate,Chemicals,3800,1300,kg,2024-06-10,146,Sodium Aluminate,1300,2600,2.90,ChemSpecialty
+Drum Actuators,Equipment,22,8,units,2024-06-11,147,Drum Actuators,8,16,450.00,MachineryLtd
+Bulk Bearings,Equipment,65,20,units,2024-06-12,148,Bulk Bearings,20,40,95.00,MachineryLtd
+Magnesium Aluminate,Chemicals,3200,1100,kg,2024-06-13,149,Magnesium Aluminate,1100,2200,3.80,MineralInc
+Safety Alarms,Equipment,42,15,units,2024-06-14,150,Safety Alarms,15,30,65.00,SafetyGear
+Bulk Couplings,Equipment,38,12,units,2024-06-15,151,Bulk Couplings,12,24,85.00,MachineryLtd
+Potassium Aluminate,Chemicals,3800,1300,kg,2024-06-16,152,Potassium Aluminate,1300,2600,4.20,ChemSpecialty
+Drum Couplings,Equipment,28,10,units,2024-06-17,153,Drum Couplings,10,20,55.00,MachineryLtd
+Bulk Dampers,Equipment,15,5,units,2024-06-18,154,Bulk Dampers,5,10,120.00,MachineryLtd
+Calcium Aluminate,Chemicals,4200,1500,kg,2024-06-19,155,Calcium Aluminate,1500,3000,1.60,MineralInc
+Safety Detectors,Equipment,22,8,units,2024-06-20,156,Safety Detectors,8,16,95.00,SafetyGear
+Bulk Encoders,Equipment,18,6,units,2024-06-21,157,Bulk Encoders,6,12,350.00,MachineryLtd
+Sodium Acetate,Chemicals,3800,1300,kg,2024-06-22,158,Sodium Acetate,1300,2600,2.10,ChemSpecialty
+Drum Encoders,Equipment,25,8,units,2024-06-23,159,Drum Encoders,8,16,220.00,MachineryLtd
+Bulk Filters,Equipment,32,12,units,2024-06-24,160,Bulk Filters,12,24,150.00,MachineryLtd
+Magnesium Acetate,Chemicals,3200,1100,kg,2024-06-25,161,Magnesium Acetate,1100,2200,3.40,MineralInc
+Safety Eyewash,Equipment,28,10,units,2024-06-26,162,Safety Eyewash,10,20,85.00,SafetyGear
+Bulk Gauges,Equipment,42,15,units,2024-06-27,163,Bulk Gauges,15,30,65.00,MachineryLtd
+Potassium Acetate,Chemicals,3800,1300,kg,2024-06-28,164,Potassium Acetate,1300,2600,4.00,ChemSpecialty
+Drum Gauges,Equipment,35,12,units,2024-06-29,165,Drum Gauges,12,24,45.00,MachineryLtd
+Bulk Heaters,Equipment,18,6,units,2024-06-30,166,Bulk Heaters,6,12,850.00,MachineryLtd
+Calcium Acetate,Chemicals,4200,1500,kg,2024-07-01,167,Calcium Acetate,1500,3000,1.80,MineralInc
+Safety Fire Extinguishers,Equipment,25,8,units,2024-07-02,168,Safety Fire Extinguishers,8,16,120.00,SafetyGear
+Bulk Indicators,Equipment,22,8,units,2024-07-03,169,Bulk Indicators,8,16,95.00,MachineryLtd
+Sodium Formate,Chemicals,3800,1300,kg,2024-07-04,170,Sodium Formate,1300,2600,2.30,ChemSpecialty
+Drum Indicators,Equipment,28,10,units,2024-07-05,171,Drum Indicators,10,20,65.00,MachineryLtd
+Bulk Jacks,Equipment,15,5,units,2024-07-06,172,Bulk Jacks,5,10,220.00,MachineryLtd
+Magnesium Formate,Chemicals,3200,1100,kg,2024-07-07,173,Magnesium Formate,1100,2200,3.60,MineralInc
+Safety First Aid Kits,Equipment,42,15,units,2024-07-08,174,Safety First Aid Kits,15,30,45.00,SafetyGear
+Bulk Kettles,Equipment,8,3,units,2024-07-09,175,Bulk Kettles,3,6,12500.00,MachineryLtd
+Potassium Formate,Chemicals,3800,1300,kg,2024-07-10,176,Potassium Formate,1300,2600,4.40,ChemSpecialty
+Drum Kettles,Equipment,12,4,units,2024-07-11,177,Drum Kettles,4,8,850.00,MachineryLtd
+Bulk Lifters,Equipment,18,6,units,2024-07-12,178,Bulk Lifters,6,12,950.00,MachineryLtd
+Calcium Formate,Chemicals,4200,1500,kg,2024-07-13,179,Calcium Formate,1500,3000,1.90,MineralInc
+Safety Lights,Equipment,65,20,units,2024-07-14,180,Safety Lights,20,40,15.00,SafetyGear
+Bulk Meters,Equipment,22,8,units,2024-07-15,181,Bulk Meters,8,16,350.00,MachineryLtd
+Sodium Gluconate,Chemicals,3800,1300,kg,2024-07-16,182,Sodium Gluconate,1300,2600,2.50,ChemSpecialty
+Drum Meters,Equipment,28,10,units,2024-07-17,183,Drum Meters,10,20,85.00,MachineryLtd
+Bulk Nozzles,Equipment,35,12,units,2024-07-18,184,Bulk Nozzles,12,24,45.00,MachineryLtd
+Magnesium Gluconate,Chemicals,3200,1100,kg,2024-07-19,185,Magnesium Gluconate,1100,2200,3.80,MineralInc
+Safety Mats,Equipment,120,40,units,2024-07-20,186,Safety Mats,40,80,25.00,SafetyGear
+Bulk Ovens,Equipment,7,2,units,2024-07-21,187,Bulk Ovens,2,4,18500.00,MachineryLtd
+Potassium Gluconate,Chemicals,3800,1300,kg,2024-07-22,188,Potassium Gluconate,1300,2600,4.60,ChemSpecialty
+Drum Ovens,Equipment,9,3,units,2024-07-23,189,Drum Ovens,3,6,1250.00,MachineryLtd
+Bulk Paddles,Equipment,25,8,units,2024-07-24,190,Bulk Paddles,8,16,85.00,MachineryLtd
+Calcium Gluconate,Chemicals,4200,1500,kg,2024-07-25,191,Calcium Gluconate,1500,3000,2.10,MineralInc
+Safety Nets,Equipment,42,15,units,2024-07-26,192,Safety Nets,15,30,65.00,SafetyGear
+Bulk Quenchers,Equipment,8,3,units,2024-07-27,193,Bulk Quenchers,3,6,9500.00,MachineryLtd
+Sodium Hexametaphosphate,Chemicals,3800,1300,kg,2024-07-28,194,Sodium Hexametaphosphate,1300,2600,2.70,ChemSpecialty
+Drum Quenchers,Equipment,12,4,units,2024-07-29,195,Drum Quenchers,4,8,650.00,MachineryLtd
+Bulk Reactors,Equipment,6,2,units,2024-07-30,196,Bulk Reactors,2,4,28500.00,MachineryLtd
+Magnesium Hexametaphosphate,Chemicals,3200,1100,kg,2024-07-31,197,Magnesium Hexametaphosphate,1100,2200,3.90,MineralInc
+Safety Oxygen Masks,Equipment,28,10,units,2024-08-01,198,Safety Oxygen Masks,10,20,95.00,SafetyGear
+Bulk Stirrers Heavy Duty,Equipment,7,2,units,2024-08-02,199,Bulk Stirrers Heavy Duty,2,4,16500.00,MachineryLtd
+Potassium Hexametaphosphate,Chemicals,3800,1300,kg,2024-08-03,200,Potassium Hexametaphosphate,1300,2600,4.80,ChemSpecialty
+Drum Stirrers,Equipment,15,5,units,2024-08-04,201,Drum Stirrers,5,10,450.00,MachineryLtd
+Bulk Tanks Stainless Steel,Equipment,5,2,units,2024-08-05,202,Bulk Tanks Stainless Steel,2,4,38500.00,MachineryLtd
+Calcium Hexametaphosphate,Chemicals,4200,1500,kg,2024-08-06,203,Calcium Hexametaphosphate,1500,3000,2.30,MineralInc
+Safety Padding,Equipment,65,20,units,2024-08-07,204,Safety Padding,20,40,35.00,SafetyGear
+Bulk Ultrafilters,Equipment,8,3,units,2024-08-08,205,Bulk Ultrafilters,3,6,12500.00,MachineryLtd
+Sodium Hypophosphite,Chemicals,3800,1300,kg,2024-08-09,206,Sodium Hypophosphite,1300,2600,2.90,ChemSpecialty
+Drum Ultrafilters,Equipment,12,4,units,2024-08-10,207,Drum Ultrafilters,4,8,850.00,MachineryLtd
+Bulk Vacuum Pumps,Equipment,7,2,units,2024-08-11,208,Bulk Vacuum Pumps,2,4,22500.00,MachineryLtd
+Magnesium Hypophosphite,Chemicals,3200,1100,kg,2024-08-12,209,Magnesium Hypophosphite,1100,2200,4.10,MineralInc
+Safety Posts,Equipment,42,15,units,2024-08-13,210,Safety Posts,15,30,55.00,SafetyGear
+Bulk Water Jets,Equipment,9,3,units,2024-08-14,211,Bulk Water Jets,3,6,9500.00,MachineryLtd
+Potassium Hypophosphite,Chemicals,3800,1300,kg,2024-08-15,212,Potassium Hypophosphite,1300,2600,5.00,ChemSpecialty
+Drum Water Jets,Equipment,15,5,units,2024-08-16,213,Drum Water Jets,5,10,650.00,MachineryLtd
+Bulk X-Ray Fluorescers,Equipment,4,1,units,2024-08-17,214,Bulk X-Ray Fluorescers,1,2,48500.00,MachineryLtd
+Calcium Hypophosphite,Chemicals,4200,1500,kg,2024-08-18,215,Calcium Hypophosphite,1500,3000,2.50,MineralInc
+Safety Radios,Equipment,28,10,units,2024-08-19,216,Safety Radios,10,20,125.00,SafetyGear
+Bulk Yarn Spinners,Equipment,7,2,units,2024-08-20,217,Bulk Yarn Spinners,2,4,16500.00,MachineryLtd
+Sodium Iodide,Chemicals,3800,1300,kg,2024-08-21,218,Sodium Iodide,1300,2600,3.10,ChemSpecialty
+Drum Yarn Spinners,Equipment,12,4,units,2024-08-22,219,Drum Yarn Spinners,4,8,950.00,MachineryLtd
+Bulk Zinc Coaters,Equipment,6,2,units,2024-08-23,220,Bulk Zinc Coaters,2,4,24500.00,MachineryLtd
+Magnesium Iodide,Chemicals,3200,1100,kg,2024-08-24,221,Magnesium Iodide,1100,2200,4.30,MineralInc
+Safety Socks,Equipment,120,40,units,2024-08-25,222,Safety Socks,40,80,8.00,SafetyGear
+Bulk Agitators,Equipment,18,6,units,2024-08-26,223,Bulk Agitators,6,12,1250.00,MachineryLtd
+Potassium Iodide,Chemicals,3800,1300,kg,2024-08-27,224,Potassium Iodide,1300,2600,5.20,ChemSpecialty
+Drum Agitators,Equipment,25,8,units,2024-08-28,225,Drum Agitators,8,16,450.00,MachineryLtd
+Bulk Blenders,Equipment,15,5,units,2024-08-29,226,Bulk Blenders,5,10,1850.00,MachineryLtd
+Calcium Iodide,Chemicals,4200,1500,kg,2024-08-30,227,Calcium Iodide,1500,3000,2.70,MineralInc
+Safety Tapes,Equipment,350,120,units,2024-08-31,228,Safety Tapes,120,240,3.50,SafetyGear
+Bulk Compressors,Equipment,9,3,units,2024-09-01,229,Bulk Compressors,3,6,12500.00,MachineryLtd
+Sodium Lactate,Chemicals,3800,1300,kg,2024-09-02,230,Sodium Lactate,1300,2600,3.30,ChemSpecialty
+Drum Compressors,Equipment,12,4,units,2024-09-03,231,Drum Compressors,4,8,950.00,MachineryLtd
+Bulk Dehumidifiers,Equipment,8,3,units,2024-09-04,232,Bulk Dehumidifiers,3,6,8500.00,MachineryLtd
+Magnesium Lactate,Chemicals,3200,1100,kg,2024-09-05,233,Magnesium Lactate,1100,2200,4.50,MineralInc
+Safety Uniforms,Equipment,280,90,units,2024-09-06,234,Safety Uniforms,90,180,22.00,SafetyGear
+Bulk Evaporators,Equipment,7,2,units,2024-09-07,235,Bulk Evaporators,2,4,18500.00,MachineryLtd
+Potassium Lactate,Chemicals,3800,1300,kg,2024-09-08,236,Potassium Lactate,1300,2600,5.40,ChemSpecialty
+Drum Evaporators,Equipment,15,5,units,2024-09-09,237,Drum Evaporators,5,10,650.00,MachineryLtd
+Bulk Fans,Equipment,25,8,units,2024-09-10,238,Bulk Fans,8,16,85.00,MachineryLtd
+Calcium Lactate,Chemicals,4200,1500,kg,2024-09-11,239,Calcium Lactate,1500,3000,2.90,MineralInc
+Safety Whistles,Equipment,180,60,units,2024-09-12,240,Safety Whistles,60,120,5.00,SafetyGear
+Bulk Grates,Equipment,35,12,units,2024-09-13,241,Bulk Grates,12,24,45.00,MachineryLtd
+Sodium Malate,Chemicals,3800,1300,kg,2024-09-14,242,Sodium Malate,1300,2600,3.50,ChemSpecialty
+Drum Grates,Equipment,28,10,units,2024-09-15,243,Drum Grates,10,20,65.00,MachineryLtd
+Bulk Heat Exchangers,Equipment,9,3,units,2024-09-16,244,Bulk Heat Exchangers,3,6,12500.00,MachineryLtd
+Magnesium Malate,Chemicals,3200,1100,kg,2024-09-17,245,Magnesium Malate,1100,2200,4.70,MineralInc
+Safety Warning Lights,Equipment,42,15,units,2024-09-18,246,Safety Warning Lights,15,30,35.00,SafetyGear
+Bulk Insulators,Equipment,18,6,units,2024-09-19,247,Bulk Insulators,6,12,450.00,MachineryLtd
+Potassium Malate,Chemicals,3800,1300,kg,2024-09-20,248,Potassium Malate,1300,2600,5.60,ChemSpecialty
+Drum Insulators,Equipment,22,8,units,2024-09-21,249,Drum Insulators,8,16,85.00,MachineryLtd
+Bulk Joints,Equipment,28,10,units,2024-09-22,250,Bulk Joints,10,20,55.00,MachineryLtd
+Calcium Malate,Chemicals,4200,1500,kg,2024-09-23,251,Calcium Malate,1500,3000,3.10,MineralInc
+Safety Warning Signs,Equipment,120,40,units,2024-09-24,252,Safety Warning Signs,40,80,12.00,SafetyGear
+Bulk Kilns,Equipment,7,2,units,2024-09-25,253,Bulk Kilns,2,4,22500.00,MachineryLtd
+Sodium Nitrate,Chemicals,3800,1300,kg,2024-09-26,254,Sodium Nitrate,1300,2600,3.70,ChemSpecialty
+Drum Kilns,Equipment,12,4,units,2024-09-27,255,Drum Kilns,4,8,950.00,MachineryLtd
+Bulk Latches,Equipment,25,8,units,2024-09-28,256,Bulk Latches,8,16,45.00,MachineryLtd
+Magnesium Nitrate,Chemicals,3200,1100,kg,2024-09-29,257,Magnesium Nitrate,1100,2200,4.90,MineralInc
+Safety Watches,Equipment,65,20,units,2024-09-30,258,Safety Watches,20,40,55.00,SafetyGear
+Bulk Mixers Industrial,Equipment,9,3,units,2024-10-01,259,Bulk Mixers Industrial,3,6,12500.00,MachineryLtd
+Potassium Nitrate,Chemicals,3800,1300,kg,2024-10-02,260,Potassium Nitrate,1300,2600,5.80,ChemSpecialty
+Drum Mixers,Equipment,15,5,units,2024-10-03,261,Drum Mixers,5,10,650.00,MachineryLtd
+Bulk Nozzles High Pressure,Equipment,18,6,units,2024-10-04,262,Bulk Nozzles High Pressure,6,12,450.00,MachineryLtd
+Calcium Nitrate,Chemicals,4200,1500,kg,2024-10-05,263,Calcium Nitrate,1500,3000,3.30,MineralInc
+Safety X-Ray Goggles,Equipment,28,10,units,2024-10-06,264,Safety X-Ray Goggles,10,20,95.00,SafetyGear
+Bulk Ovens Industrial,Equipment,7,2,units,2024-10-07,265,Bulk Ovens Industrial,2,4,18500.00,MachineryLtd
+Sodium Oleate,Chemicals,3800,1300,kg,2024-10-08,266,Sodium Oleate,1300,2600,3.90,ChemSpecialty
+Drum Ovens Industrial,Equipment,12,4,units,2024-10-09,267,Drum Ovens Industrial,4,8,1250.00,MachineryLtd
+Bulk Presses Hydraulic,Equipment,8,3,units,2024-10-10,268,Bulk Presses Hydraulic,3,6,16500.00,MachineryLtd
+Magnesium Oleate,Chemicals,3200,1100,kg,2024-10-11,269,Magnesium Oleate,1100,2200,5.10,MineralInc
+Safety Y-Straps,Equipment,42,15,units,2024-10-12,270,Safety Y-Straps,15,30,25.00,SafetyGear
+Bulk Quenchers Water,Equipment,9,3,units,2024-10-13,271,Bulk Quenchers Water,3,6,9500.00,MachineryLtd
+Potassium Oleate,Chemicals,3800,1300,kg,2024-10-14,272,Potassium Oleate,1300,2600,6.00,ChemSpecialty
+Drum Quenchers Water,Equipment,15,5,units,2024-10-15,273,Drum Quenchers Water,5,10,850.00,MachineryLtd
+Bulk Reactors Chemical,Equipment,6,2,units,2024-10-16,274,Bulk Reactors Chemical,2,4,28500.00,MachineryLtd
+Calcium Oleate,Chemicals,4200,1500,kg,2024-10-17,275,Calcium Oleate,1500,3000,3.50,MineralInc
+Safety Zippers,Equipment,120,40,units,2024-10-18,276,Safety Zippers,40,80,8.00,SafetyGear
+Bulk Screens Vibrating,Equipment,8,3,units,2024-10-19,277,Bulk Screens Vibrating,3,6,12500.00,MachineryLtd
+Sodium Palmitate,Chemicals,3800,1300,kg,2024-10-20,278,Sodium Palmitate,1300,2600,4.10,ChemSpecialty
+Drum Screens,Equipment,12,4,units,2024-10-21,279,Drum Screens,4,8,950.00,MachineryLtd
+Bulk Tanks Chemical,Equipment,5,2,units,2024-10-22,280,Bulk Tanks Chemical,2,4,35000.00,MachineryLtd
+Magnesium Palmitate,Chemicals,3200,1100,kg,2024-10-23,281,Magnesium Palmitate,1100,2200,5.30,MineralInc
+Safety Arm Bands,Equipment,65,20,units,2024-10-24,282,Safety Arm Bands,20,40,12.00,SafetyGear
+Bulk Ultrafilters Industrial,Equipment,7,2,units,2024-10-25,283,Bulk Ultrafilters Industrial,2,4,22500.00,MachineryLtd
+Potassium Palmitate,Chemicals,3800,1300,kg,2024-10-26,284,Potassium Palmitate,1300,2600,6.20,ChemSpecialty
+Drum Ultrafilters Industrial,Equipment,12,4,units,2024-10-27,285,Drum Ultrafilters Industrial,4,8,1250.00,MachineryLtd
+Bulk Valves Control,Equipment,18,6,units,2024-10-28,286,Bulk Valves Control,6,12,850.00,MachineryLtd
+Calcium Palmitate,Chemicals,4200,1500,kg,2024-10-29,287,Calcium Palmitate,1500,3000,3.70,MineralInc
+Safety Bump Caps,Equipment,42,15,units,2024-10-30,288,Safety Bump Caps,15,30,18.00,SafetyGear
+Bulk Water Jets High Pressure,Equipment,9,3,units,2024-10-31,289,Bulk Water Jets High Pressure,3,6,9500.00,MachineryLtd
+Sodium Stearate,Chemicals,3800,1300,kg,2024-11-01,290,Sodium Stearate,1300,2600,4.30,ChemSpecialty
+Drum Water Jets High Pressure,Equipment,15,5,units,2024-11-02,291,Drum Water Jets High Pressure,5,10,650.00,MachineryLtd
+Bulk X-Ray Diffractometers,Equipment,4,1,units,2024-11-03,292,Bulk X-Ray Diffractometers,1,2,48500.00,MachineryLtd
+Magnesium Stearate,Chemicals,3200,1100,kg,2024-11-04,293,Magnesium Stearate,1100,2200,5.50,MineralInc
+Safety Caution Tape,Equipment,120,40,units,2024-11-05,294,Safety Caution Tape,40,80,6.00,SafetyGear
+Bulk Yarn Twisters,Equipment,7,2,units,2024-11-06,295,Bulk Yarn Twisters,2,4,16500.00,MachineryLtd
+Potassium Stearate,Chemicals,3800,1300,kg,2024-11-07,296,Potassium Stearate,1300,2600,6.40,ChemSpecialty
+Drum Yarn Twisters,Equipment,12,4,units,2024-11-08,297,Drum Yarn Twisters,4,8,950.00,MachineryLtd
+Bulk Zinc Platers,Equipment,6,2,units,2024-11-09,298,Bulk Zinc Platers,2,4,24500.00,MachineryLtd
+Calcium Stearate,Chemicals,4200,1500,kg,2024-11-10,299,Calcium Stearate,1500,3000,3.90,MineralInc
+Safety Door Bars,Equipment,65,20,units,2024-11-11,300,Safety Door Bars,20,40,35.00,SafetyGear
+Bulk Agitators Heavy Duty,Equipment,9,3,units,2024-11-12,301,Bulk Agitators Heavy Duty,3,6,12500.00,MachineryLtd
+Sodium Sulfate,Chemicals,3800,1300,kg,2024-11-13,302,Sodium Sulfate,1300,2600,4.50,ChemSpecialty
+Drum Agitators Heavy Duty,Equipment,15,5,units,2024-11-14,303,Drum Agitators Heavy Duty,5,10,850.00,MachineryLtd
+Bulk Blenders Industrial,Equipment,18,6,units,2024-11-15,304,Bulk Blenders Industrial,6,12,1850.00,MachineryLtd
+Magnesium Sulfate,Chemicals,3200,1100,kg,2024-11-16,305,Magnesium Sulfate,1100,2200,5.70,MineralInc
+Safety Edge Protectors,Equipment,42,15,units,2024-11-17,306,Safety Edge Protectors,15,30,22.00,SafetyGear
+Bulk Compressors Industrial,Equipment,8,3,units,2024-11-18,307,Bulk Compressors Industrial,3,6,16500.00,MachineryLtd
+Potassium Sulfate,Chemicals,3800,1300,kg,2024-11-19,308,Potassium Sulfate,1300,2600,6.60,ChemSpecialty
+Drum Compressors Industrial,Equipment,12,4,units,2024-11-20,309,Drum Compressors Industrial,4,8,1250.00,MachineryLtd
+Bulk Dehumidifiers Industrial,Equipment,9,3,units,2024-11-21,310,Bulk Dehumidifiers Industrial,3,6,9500.00,MachineryLtd
+Calcium Sulfate,Chemicals,4200,1500,kg,2024-11-22,311,Calcium Sulfate,1500,3000,4.10,MineralInc
+Safety Floor Markers,Equipment,120,40,units,2024-11-23,312,Safety Floor Markers,40,80,15.00,SafetyGear
+Bulk Evaporators Industrial,Equipment,7,2,units,2024-11-24,313,Bulk Evaporators Industrial,2,4,22500.00,MachineryLtd
+Sodium Tartrate,Chemicals,3800,1300,kg,2024-11-25,314,Sodium Tartrate,1300,2600,4.70,ChemSpecialty
+Drum Evaporators Industrial,Equipment,15,5,units,2024-11-26,315,Drum Evaporators Industrial,5,10,950.00,MachineryLtd
+Bulk Fans Industrial,Equipment,25,8,units,2024-11-27,316,Bulk Fans Industrial,8,16,120.00,MachineryLtd
+Magnesium Tartrate,Chemicals,3200,1100,kg,2024-11-28,317,Magnesium Tartrate,1100,2200,5.90,MineralInc
+Safety Guard Rails,Equipment,65,20,units,2024-11-29,318,Safety Guard Rails,20,40,45.00,SafetyGear
+Bulk Grates Industrial,Equipment,18,6,units,2024-11-30,319,Bulk Grates Industrial,6,12,65.00,MachineryLtd
+Potassium Tartrate,Chemicals,3800,1300,kg,2024-12-01,320,Potassium Tartrate,1300,2600,6.80,ChemSpecialty
+Drum Grates Industrial,Equipment,22,8,units,2024-12-02,321,Drum Grates Industrial,8,16,85.00,MachineryLtd
+Bulk Heat Exchangers Industrial,Equipment,9,3,units,2024-12-03,322,Bulk Heat Exchangers Industrial,3,6,12500.00,MachineryLtd
+Calcium Tartrate,Chemicals,4200,1500,kg,2024-12-04,323,Calcium Tartrate,1500,3000,4.30,MineralInc
+Safety Hand Rails,Equipment,42,15,units,2024-12-05,324,Safety Hand Rails,15,30,55.00,SafetyGear
+Bulk Insulators Industrial,Equipment,15,5,units,2024-12-06,325,Bulk Insulators Industrial,5,10,450.00,MachineryLtd
+Sodium Thiosulfate,Chemicals,3800,1300,kg,2024-12-07,326,Sodium Thiosulfate,1300,2600,4.90,ChemSpecialty
+Drum Insulators Industrial,Equipment,28,10,units,2024-12-08,327,Drum Insulators Industrial,10,20,65.00,MachineryLtd
+Bulk Joints Industrial,Equipment,35,12,units,2024-12-09,328,Bulk Joints Industrial,12,24,85.00,MachineryLtd
+Magnesium Thiosulfate,Chemicals,3200,1100,kg,2024-12-10,329,Magnesium Thiosulfate,1100,2200,6.10,MineralInc
+Safety Impact Gloves,Equipment,120,40,units,2024-12-11,330,Safety Impact Gloves,40,80,18.00,SafetyGear
+Bulk Kilns Industrial,Equipment,8,3,units,2024-12-12,331,Bulk Kilns Industrial,3,6,16500.00,MachineryLtd
+Potassium Thiosulfate,Chemicals,3800,1300,kg,2024-12-13,332,Potassium Thiosulfate,1300,2600,7.00,ChemSpecialty
+Drum Kilns Industrial,Equipment,12,4,units,2024-12-14,333,Drum Kilns Industrial,4,8,1250.00,MachineryLtd
+Bulk Latches Industrial,Equipment,25,8,units,2024-12-15,334,Bulk Latches Industrial,8,16,65.00,MachineryLtd
+Calcium Thiosulfate,Chemicals,4200,1500,kg,2024-12-16,335,Calcium Thiosulfate,1500,3000,4.50,MineralInc
+Safety Knee Pads,Equipment,95,30,units,2024-12-17,336,Safety Knee Pads,30,60,22.00,SafetyGear
+Bulk Mixers High Shear,Equipment,9,3,units,2024-12-18,337,Bulk Mixers High Shear,3,6,12500.00,MachineryLtd
+Sodium Urea,Chemicals,3800,1300,kg,2024-12-19,338,Sodium Urea,1300,2600,5.10,ChemSpecialty
+Drum Mixers High Shear,Equipment,15,5,units,2024-12-20,339,Drum Mixers High Shear,5,10,950.00,MachineryLtd
+Bulk Nozzles Specialized,Equipment,18,6,units,2024-12-21,340,Bulk Nozzles Specialized,6,12,550.00,MachineryLtd
+Magnesium Urea,Chemicals,3200,1100,kg,2024-12-22,341,Magnesium Urea,1100,2200,6.30,MineralInc
+Safety Ladder Cages,Equipment,42,15,units,2024-12-23,342,Safety Ladder Cages,15,30,85.00,SafetyGear
+Bulk Ovens High Temp,Equipment,7,2,units,2024-12-24,343,Bulk Ovens High Temp,2,4,22500.00,MachineryLtd
+Potassium Urea,Chemicals,3800,1300,kg,2024-12-25,344,Potassium Urea,1300,2600,7.20,ChemSpecialty
+Drum Ovens High Temp,Equipment,12,4,units,2024-12-26,345,Drum Ovens High Temp,4,8,1650.00,MachineryLtd
+Bulk Presses Specialized,Equipment,8,3,units,2024-12-27,346,Bulk Presses Specialized,3,6,18500.00,MachineryLtd
+Calcium Urea,Chemicals,4200,1500,kg,2024-12-28,347,Calcium Urea,1500,3000,4.70,MineralInc
+Safety Mirror Systems,Equipment,65,20,units,2024-12-29,348,Safety Mirror Systems,20,40,95.00,SafetyGear
+Bulk Quenchers Oil,Equipment,9,3,units,2024-12-30,349,Bulk Quenchers Oil,3,6,9500.00,MachineryLtd
+Sodium Valerate,Chemicals,3800,1300,kg,2024-12-31,350,Sodium Valerate,1300,2600,5.30,ChemSpecialty
+Drum Quenchers Oil,Equipment,15,5,units,2025-01-01,351,Drum Quenchers Oil,5,10,850.00,MachineryLtd
+Bulk Reactors High Pressure,Equipment,6,2,units,2025-01-02,352,Bulk Reactors High Pressure,2,4,28500.00,MachineryLtd
+Magnesium Valerate,Chemicals,3200,1100,kg,2025-01-03,353,Magnesium Valerate,1100,2200,6.50,MineralInc
+Safety Noise Meters,Equipment,42,15,units,2025-01-04,354,Safety Noise Meters,15,30,125.00,SafetyGear
+Bulk Screens Rotary,Equipment,8,3,units,2025-01-05,355,Bulk Screens Rotary,3,6,12500.00,MachineryLtd
+Potassium Valerate,Chemicals,3800,1300,kg,2025-01-06,356,Potassium Valerate,1300,2600,7.40,ChemSpecialty
+Drum Screens Rotary,Equipment,12,4,units,2025-01-07,357,Drum Screens Rotary,4,8,950.00,MachineryLtd
+Bulk Tanks High Pressure,Equipment,5,2,units,2025-01-08,358,Bulk Tanks High Pressure,2,4,35000.00,MachineryLtd
+Calcium Valerate,Chemicals,4200,1500,kg,2025-01-09,359,Calcium Valerate,1500,3000,4.90,MineralInc
+Safety Oxygen Monitors,Equipment,28,10,units,2025-01-10,360,Safety Oxygen Monitors,10,20,150.00,SafetyGear
+Bulk Ultrafilters Specialized,Equipment,7,2,units,2025-01-11,361,Bulk Ultrafilters Specialized,2,4,22500.00,MachineryLtd
+Sodium Xylene Sulfonate,Chemicals,3800,1300,kg,2025-01-12,362,Sodium Xylene Sulfonate,1300,2600,5.50,ChemSpecialty
+Drum Ultrafilters Specialized,Equipment,12,4,units,2025-01-13,363,Drum Ultrafilters Specialized,4,8,1250.00,MachineryLtd
+Bulk Valves Specialized,Equipment,18,6,units,2025-01-14,364,Bulk Valves Specialized,6,12,850.00,MachineryLtd
+Magnesium Xylene Sulfonate,Chemicals,3200,1100,kg,2025-01-15,365,Magnesium Xylene Sulfonate,1100,2200,6.70,MineralInc
+Safety Ppe Suits,Equipment,120,40,units,2025-01-16,366,Safety Ppe Suits,40,80,45.00,SafetyGear
+Bulk Water Jets Specialized,Equipment,9,3,units,2025-01-17,367,Bulk Water Jets Specialized,3,6,9500.00,MachineryLtd
+Potassium Xylene Sulfonate,Chemicals,3800,1300,kg,2025-01-18,368,Potassium Xylene Sulfonate,1300,2600,7.60,ChemSpecialty
+Drum Water Jets Specialized,Equipment,15,5,units,2025-01-19,369,Drum Water Jets Specialized,5,10,650.00,MachineryLtd
+Bulk X-Ray Analyzers,Equipment,4,1,units,2025-01-20,370,Bulk X-Ray Analyzers,1,2,48500.00,MachineryLtd
+Calcium Xylene Sulfonate,Chemicals,4200,1500,kg,2025-01-21,371,Calcium Xylene Sulfonate,1500,3000,5.10,MineralInc
+Safety Quench Tanks,Equipment,25,8,units,2025-01-22,372,Safety Quench Tanks,8,16,220.00,SafetyGear
+Bulk Yarn Spinners Industrial,Equipment,7,2,units,2025-01-23,373,Bulk Yarn Spinners Industrial,2,4,16500.00,MachineryLtd
+Sodium Zeolite,Chemicals,3800,1300,kg,2025-01-24,374,Sodium Zeolite,1300,2600,5.70,ChemSpecialty
+Drum Yarn Spinners Industrial,Equipment,12,4,units,2025-01-25,375,Drum Yarn Spinners Industrial,4,8,950.00,MachineryLtd
+Bulk Zinc Coaters Industrial,Equipment,6,2,units,2025-01-26,376,Bulk Zinc Coaters Industrial,2,4,24500.00,MachineryLtd
+Magnesium Zeolite,Chemicals,3200,1100,kg,2025-01-27,377,Magnesium Zeolite,1100,2200,6.90,MineralInc
+Safety Radiation Suits,Equipment,42,15,units,2025-01-28,378,Safety Radiation Suits,15,30,95.00,SafetyGear
+Bulk Agitators Specialized,Equipment,9,3,units,2025-01-29,379,Bulk Agitators Specialized,3,6,12500.00,MachineryLtd
+Potassium Zeolite,Chemicals,3800,1300,kg,2025-01-30,380,Potassium Zeolite,1300,2600,7.80,ChemSpecialty
+Drum Agitators Specialized,Equipment,15,5,units,2025-01-31,381,Drum Agitators Specialized,5,10,850.00,MachineryLtd
+Bulk Blenders High Shear,Equipment,18,6,units,2025-02-01,382,Bulk Blenders High Shear,6,12,1850.00,MachineryLtd
+Calcium Zeolite,Chemicals,4200,1500,kg,2025-02-02,383,Calcium Zeolite,1500,3000,5.30,MineralInc
+Safety Shower Stations,Equipment,65,20,units,2025-02-03,384,Safety Shower Stations,20,40,250.00,SafetyGear
+Bulk Compressors High Pressure,Equipment,8,3,units,2025-02-04,385,Bulk Compressors High Pressure,3,6,16500.00,MachineryLtd
+Sodium Zirconate,Chemicals,3800,1300,kg,2025-02-05,386,Sodium Zirconate,1300,2600,5.90,ChemSpecialty
+Drum Compressors High Pressure,Equipment,12,4,units,2025-02-06,387,Drum Compressors High Pressure,4,8,1250.00,MachineryLtd
+Bulk Dehumidifiers Specialized,Equipment,9,3,units,2025-02-07,388,Bulk Dehumidifiers Specialized,3,6,9500.00,MachineryLtd
+Magnesium Zirconate,Chemicals,3200,1100,kg,2025-02-08,389,Magnesium Zirconate,1100,2200,7.10,MineralInc
+Safety Traffic Cones,Equipment,280,90,units,2025-02-09,390,Safety Traffic Cones,90,180,12.00,SafetyGear
+Bulk Evaporators Specialized,Equipment,7,2,units,2025-02-10,391,Bulk Evaporators Specialized,2,4,22500.00,MachineryLtd
+Potassium Zirconate,Chemicals,3800,1300,kg,2025-02-11,392,Potassium Zirconate,1300,2600,8.00,ChemSpecialty
+Drum Evaporators Specialized,Equipment,15,5,units,2025-02-12,393,Drum Evaporators Specialized,5,10,950.00,MachineryLtd
+Bulk Fans High Velocity,Equipment,25,8,units,2025-02-13,394,Bulk Fans High Velocity,8,16,120.00,MachineryLtd
+Calcium Zirconate,Chemicals,4200,1500,kg,2025-02-14,395,Calcium Zirconate,1500,3000,5.50,MineralInc
+Safety UV Goggles,Equipment,42,15,units,2025-02-15,396,Safety UV Goggles,15,30,35.00,SafetyGear
+Bulk Grates Heavy Duty,Equipment,18,6,units,2025-02-16,397,Bulk Grates Heavy Duty,6,12,65.00,MachineryLtd
+Sodium Zincate,Chemicals,3800,1300,kg,2025-02-17,398,Sodium Zincate,1300,2600,6.10,ChemSpecialty
+Drum Grates Heavy Duty,Equipment,22,8,units,2025-02-18,399,Drum Grates Heavy Duty,8,16,85.00,MachineryLtd
+Bulk Heat Exchangers Specialized,Equipment,9,3,units,2025-02-19,400,Bulk Heat Exchangers Specialized,3,6,12500.00,MachineryLtd
