@@ -161,7 +161,7 @@ project/
 │   └── stock_history.csv        # Historical data
 ├── templates/                    # Static assets
 │   └── ocp_png.png              # Logo file
-└── README.md                    # This file
+└── README.md                    # Readme file
 ```
 
 ## Integration Notes
